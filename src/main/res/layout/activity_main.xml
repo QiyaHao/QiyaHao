@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_main_activity"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="275dp">
+            <LinearLayout
+                android:background="@drawable/bg_listitem"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:text="photo show module"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                </TextView>
+                <ImageView
+
+                    android:id="@+id/iv_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="5dp"
+                    >
+                </ImageView>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_listitem"
+            android:layout_height="88dp">
+            <TextView
+                android:id="@+id/photo_wenzi"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:text="photo module"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <Button
+                    android:id="@+id/bt_take_photo"
+
+
+                    android:layout_width="100dp"
+                    android:layout_weight="1"
+                    android:text="photo"
+                    android:layout_marginBottom="2dp"
+                    android:layout_height="50dp">
+
+                </Button>
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/bt_choose_from_album"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="100dp"
+                    android:text="choose "
+                    android:layout_height="50dp">
+
+                </Button>
+                <Button
+                    android:id="@+id/bt_analyse"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="100dp"
+                    android:text="analyse"
+                    android:layout_weight="1"
+                    android:layout_height="50dp">
+
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="-2dp"
+
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:layout_height="28dp">
+            <Button
+                android:id="@+id/btn_linkBlueTooth"
+                android:onClick="linkBlueTooth"
+                android:text=" link to bt"
+
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:background="@color/teal_700"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+               >
+
+            </Button>
+            <TextView
+                android:id="@+id/tv_blueToothStatus"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:text="status：unlinked"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/r_1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp">
+
+            <Switch
+                android:id="@+id/swc_whitelight"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_listitem"
+                android:padding="10dp"
+                android:text="white light"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+            <Switch
+                android:id="@+id/swc_yinglight"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@id/swc_whitelight"
+                android:layout_weight="1"
+                android:background="@drawable/bg_listitem"
+                android:padding="10dp"
+                android:text="fluorescence"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginEnd="5dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="150dp">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/bg_listitem"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/t_1"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:padding="5dp"
+                        android:text="Motor1"
+                        android:textSize="15sp"></TextView>
+                    <Chronometer
+                        android:id="@+id/chronometer_mo_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_toRightOf="@id/t_1"
+                        ></Chronometer>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/t_1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="37dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="37dp"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="speed(10-30)"
+                                android:textSize="12sp"></TextView>
+
+                            <EditText
+
+                                android:id="@+id/mo_v_1"
+                                android:layout_width="0dp"
+                                android:textSize="12sp"
+                                android:layout_height="37dp"
+                                android:layout_weight="1"
+                                android:inputType="number"
+                                android:hint="ml/min"></EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="37dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+
+                                android:text="time"
+                                android:textSize="12sp">
+
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/mo_t_1"
+                                android:layout_width="0dp"
+                                android:layout_height="37dp"
+                                android:layout_weight="1"
+                                android:hint="min"
+                                android:inputType="number"
+                                android:textSize="15sp"
+                                ></EditText>
+                            <EditText
+                                android:id="@+id/mo_t_1_s"
+                                android:layout_width="0dp"
+                                android:layout_height="37dp"
+                                android:layout_weight="1"
+                                android:hint="S"
+                                android:inputType="number"
+                                android:textSize="15sp"
+                                ></EditText>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <Button
+                                android:id="@+id/turnon_mo_1"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_weight="1"
+
+                                android:text="ON"
+                                android:background="#32CD32"
+                                android:textColor="@color/white"
+                                android:textSize="12sp">
+
+                            </Button>
+                            <Button
+                                android:id="@+id/stop_mo_1"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_weight="1"
+                                android:background="#3366FF"
+                                android:text="P"
+                                android:textColor="@color/white"
+                                android:textSize="12sp">
+
+                            </Button>
+
+
+                            <Button
+                                android:id="@+id/turnoff_mo_1"
+                                android:layout_width="20dp"
+                                android:layout_height="35dp"
+                                android:layout_weight="1"
+                                android:background="#FF0000"
+                                android:text="OFF/reset"
+                                android:textColor="@color/white"
+                                android:textSize="10sp">
+
+                            </Button>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_listitem"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tx_2"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:text="Motor2"
+                        android:textSize="15sp"></TextView>
+                    <Chronometer
+                        android:id="@+id/chronometer_mo_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_toRightOf="@id/tx_2"
+                        ></Chronometer>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tx_2"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="37dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="37dp"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+
+                                android:text="speed(10-30)"
+                                android:textSize="12sp"></TextView>
+
+                            <EditText
+                                android:id="@+id/mo_v_2"
+                                android:layout_width="0dp"
+                                android:layout_height="37dp"
+                                android:layout_weight="1"
+                                android:inputType="number"
+                                android:hint="ml/min"
+
+                                android:textSize="12sp"></EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="37dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="37dp"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="time"
+                                android:textSize="12sp">
+
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/mo_t_2"
+                                android:textSize="15sp"
+                                android:layout_width="0dp"
+                                android:layout_height="37dp"
+                                android:layout_weight="1"
+                                android:hint="min"
+                                android:inputType="number"
+
+                                ></EditText>
+                            <EditText
+                                android:id="@+id/mo_t_2_s"
+                                android:textSize="15sp"
+                                android:inputType="number"
+                                android:layout_width="0dp"
+                                android:layout_height="37dp"
+                                android:layout_weight="1"
+                                android:hint="S"
+
+                                ></EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="5dp"
+
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <Button
+                                android:id="@+id/turnon_mo_2"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_weight="1"
+                                android:background="#32CD32"
+                                android:text="ON"
+                                android:textColor="@color/white"
+                                android:textSize="12sp">
+
+                            </Button>
+                            <Button
+                                android:id="@+id/stop_mo_2"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_weight="1"
+                                android:background="#3366FF"
+                                android:text="P"
+                                android:textColor="@color/white"
+                                android:textSize="12sp">
+
+                            </Button>
+
+                            <Button
+                                android:id="@+id/turnoff_mo_2"
+                                android:layout_width="20dp"
+                                android:layout_height="35dp"
+                                android:layout_weight="1"
+                                android:background="#FF0000"
+                                android:text="OFF/reset"
+                                android:textColor="@color/white"
+                                android:textSize="10sp">
+
+                            </Button>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_listitem"
+            android:layout_height="70dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/tv_motor1"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
+                    android:padding="5dp"
+                    android:text="Current temperature(℃)"
+                    android:textSize="15sp" />
+                <EditText
+                    android:id="@+id/temp_num"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
+                    android:padding="5dp"
+                    android:text="unmeasured"
+                    android:editable="false"
+                    android:textSize="15sp" />
+
+                <Chronometer
+                    android:id="@+id/chronometer_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    ></Chronometer>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:text="Temp："
+                    android:textSize="12sp"></TextView>
+
+                <EditText
+                    android:id="@+id/temp"
+                    android:inputType="number"
+                    android:textSize="12sp"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:hint="℃"></EditText>
+                <TextView
+
+                    android:layout_width="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:text="time："
+                    android:textSize="13sp"></TextView>
+
+                <EditText
+                    android:textSize="10sp"
+                    android:inputType="number"
+                    android:id="@+id/temp_time"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:hint="min"></EditText>
+                <EditText
+                    android:textSize="10sp"
+                    android:inputType="number"
+                    android:id="@+id/temp_time_s"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:hint="S"></EditText>
+
+                <Button
+                    android:id="@+id/turnon_temp"
+                    android:layout_width="36dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="#32CD32"
+                    android:text="ON"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="15sp"></Button>
+
+                <Button
+                    android:id="@+id/stop_temp"
+                    android:layout_width="36dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="#3366FF"
+                    android:text="P"
+                    android:textColor="@color/white"
+                    android:textSize="15sp">
+                </Button>
+
+                <Button
+                    android:id="@+id/turnoff_temp"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#FF0000"
+                    android:text="OFF/reset"
+                    android:textColor="@color/white"
+                    android:textSize="10sp">
+
+                </Button>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_listitem"
+            android:layout_height="60dp">
+            <Button
+                android:id="@+id/turnon_all"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="start"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:layout_height="50dp">
+            </Button>
+            <Button
+                android:layout_marginTop="5dp"
+                android:id="@+id/pause_all"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="pause"
+
+                android:layout_height="50dp">
+            </Button>
+            <Button
+                android:layout_marginTop="5dp"
+                android:id="@+id/stop_all"
+                android:layout_weight="1"
+                android:text="stop/reset"
+                android:layout_marginEnd="5dp"
+                android:layout_width="0dp"
+                android:layout_height="50dp">
+            </Button>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
